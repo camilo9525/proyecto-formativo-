@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Jura', sans-serif;
+    width: 90%;
+    align-items: center;
+    font-family: "Roboto";
+    margin: 0 auto;
+}
+
+nav {
+    text-align: right;
+    margin-top: 0.7em;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    background: #0489B1;
+    color: #FF5733;
+    border-radius: 3px;
+    padding: 0.6em 0.3em;
+    box-shadow: 5px 5px 5px #333;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    background: #F2510B;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0.6em 0.3em;
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+}
+
+p {
+
+    font-size: 20px;
+    color: #FFFF00;
+}
+
+nav {
+    background-color: transparent;
+    margin-right: 400px;
+
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav a {
+    color: #FF8000;
+    font-weight: bold;
+
+}
+
+.box {
+    border: 2px solid rgb(10, 21, 26);
+    border-radius: 5px;
+    width: 200px;
+    height: 120px;
+    float: left;
+    margin-right: 15px;
+}
+
+
+
+h2 {
+    color: red;
+    font-style: italic;
+    font-size: 100px;
+}
+
+h3 {
+    color: blue;
+    font-size: 50px;
+
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container-fluid .baner {
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+}
+
+@media Screen and (min-width:768px) {
+    .container-fluid {
+        min-height: calc(100vh-20px);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .container-fluid .baner {
+        width: inherit;
+        height: initial;
+        margin: initial;
+    }
+
+
+}
+
+
+/* icono fijo */
+
+.linkimg {
+    position: fixed;
+    /* Fijo en la pantalla */
+    bottom: 90%;
+    /* 0 de bottom */
+    right: 0;
+    /* 0 de la derecha */
+    z-index: 100;
+
+}
+
+@media Screen and (max-width:480px) {
+    .pantallagrande {
+        display: none;
+        /* Desaparecer este icono de la pantalla */
+    }
+
+    .pantallachica {
+        display: block;
+        /* Aparece este icono en la pantalla */
+    }
+}
+
+@media Screen and (min-width:481px) {
+    .pantallagrande {
+        display: block;
+        /* Aparecer este icono en la pantalla */
+    }
+
+    .pantallachica {
+        display: none;
+        /* Desaparecer este icono en la pantalla */
+
+    }
+}
+
+/* // icono fijo */
